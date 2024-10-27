@@ -1,0 +1,19 @@
+<html> 
+<head> 
+<title> Multiplication Table </title> 
+<h3> <marquee> Multiplication Table </marquee> </h3> 
+<input id= "text" placeholder= "Enter Num"> 
+<button onclick= "mtable()" id= "btnl"> Generate Multiplication Table </button> 
+<script> 
+function mtable() { 
+var num= parseInt(document.getElementById("text").value); 
+//creating a multiplication table 
+for(let i=1; i<=10; i++) { 
+//multiply i with num 
+const result= i * num; 
+//display result 
+console.log("<br>" + num + " " + "*" + " " + i + " " + "=" + " " + result); 
+document.write("<br>" + num + " " + "x" + " " + i + " " + "=" + " " + result);  }} 
+</script> 
+</head> 
+</html>
