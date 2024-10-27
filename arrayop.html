@@ -1,0 +1,35 @@
+<html>
+<script>
+
+// Function to remove a specific element from the array 
+function removeElement(arr, element) { 
+const index = arr.indexOf(element); 
+if (index > -1) { 
+arr.splice(index, 1); // Removes the element at the specified index 
+} 
+return arr; 
+} 
+// Function to check if an array contains a specified value 
+function containsElement(arr, element) { 
+return arr.includes(element); 
+} 
+// Function to empty an array 
+function emptyArray(arr) { 
+arr.length = 0; // Setting the length to 0 empties the array 
+return arr; 
+} 
+// Example usage: 
+// Initial array 
+let myArray = [10, 20, 30, 40, 50]; 
+console.log("Original Array: ", myArray); 
+// 1. Remove a specific element (e.g., 30) 
+myArray = removeElement(myArray, 30); 
+console.log("Array after removing 30: ", myArray); 
+// 2. Check if the array contains a specific value (e.g., 20) 
+const hasTwenty = containsElement(myArray, 20); 
+console.log("Array contains 20: ", hasTwenty); 
+// 3. Empty the array 
+myArray = emptyArray(myArray); 
+console.log("Array after emptying: ", myArray);
+</script>
+</html>
