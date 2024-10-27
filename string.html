@@ -1,0 +1,27 @@
+<html>
+<script>
+// Function to reverse a string 
+function reverseString(str) { 
+return str.split('').reverse().join(''); 
+} 
+// Function to replace characters in a string 
+function replaceCharacters(str, oldChar, newChar) { 
+return str.split(oldChar).join(newChar); 
+} 
+// Function to check if the string is a palindrome 
+function isPalindrome(str) { 
+const reversedStr = reverseString(str); 
+return str === reversedStr; 
+} 
+// Example usage: 
+const inputString = "madam"; // you can change this to any string you want 
+console.log("Original String: " + inputString); 
+// 1. Reverse the string 
+console.log("Reversed String: " + reverseString(inputString)); 
+// 2. Replace characters (Example: replace 'a' with 'o') 
+const replacedString = replaceCharacters(inputString, 'a', 'o'); 
+console.log("Replaced String (replace 'a' with 'o'): " + replacedString); 
+// 3. Check if the string is a palindrome 
+console.log("Is Palindrome? " + isPalindrome(inputString)); 
+</script>
+</html>
