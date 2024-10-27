@@ -1,0 +1,27 @@
+<html>
+<script>
+
+// Function to append an object to an array 
+function appendObjectToArray(arr, obj) { 
+arr.push(obj); // Append the object to the array 
+return arr; 
+} 
+// Function to check if an object is an array 
+function isArray(obj) { 
+return Array.isArray(obj); // Returns true if the object is an array 
+} 
+// Example usage: 
+// Initial array 
+let myArray = [1, 2, 3]; 
+console.log("Original Array: ", myArray); 
+// Object to be appended 
+let newObject = { name: "John", age: 30 }; 
+// 1. Append an object to the array 
+myArray = appendObjectToArray(myArray, newObject); 
+console.log("Array after appending object: ", myArray); 
+// 2. Check if 'myArray' is an array 
+console.log("Is 'myArray' an array? ", isArray(myArray)); 
+// 3. Check if 'newObject' is an array 
+console.log("Is 'newObject' an array? ", isArray(newObject)); 
+</script>
+</html>
